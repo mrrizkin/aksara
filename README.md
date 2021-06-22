@@ -19,5 +19,5 @@ TODO
 
 ---
 
-Original code from [Kairaga.com](https://www.kairaga.com/ kairaga.com portal manuscript Sunda)
+Original code from [Kairaga.com](https://www.kairaga.com/ "kairaga.com portal manuscript Sunda")
 by Dian Tresna Nugraha released under GPL license
