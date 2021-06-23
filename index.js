@@ -1,9 +1,10 @@
 /*!
- * Sundanese Script Converter & Inverter
+ * Aksun
  * (c) 2021 Rizki Nugraha <nugrha07rizki@gmail.com>
  * GNU Public Lisence
  */
 
 'use strict';
 
-module.exports = require('./lib/ssci.ts');
+require = require('esm')(module /*, options*/);
+module.exports = require('./lib/aksun.js');
