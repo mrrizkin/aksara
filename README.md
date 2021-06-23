@@ -8,6 +8,15 @@ Aksun or Aksara Sunda (or Sundanese script) is a program for converting Latin sc
 
 Usage
 -----
+```javascript
+const { converter } = require("aksun");
+
+let result = converter("Kumaha Damang");
+console.log(result);
+```
+Output: ᮊᮥᮙᮠ ᮓᮙᮀ
+
+### CLI
 ```sh
 aksun [options] <input>
 ```
@@ -23,12 +32,32 @@ aksun "Wilujeung Sumping"
 ```
 Output: ᮝᮤᮜᮥᮏᮩᮀ ᮞᮥᮙ᮪ᮕᮤᮀ
 
-#### Available Options
-```sh
--v, --version           print aksun version
--h, --help              print help to console
-```
+<details>
+  <summary>Copy output to clipboard</summary>
+  
+  Linux with xclip
+  ```bash
+  aksun "Nami abdi Rizki, anjeun tiasa nyauran kuring Iki" | xclip -selection c
+  ```
 
+  Mac with pbcopy
+  ```zsh
+  aksun "Aing maung" | pbcopy
+  ```
+
+  Windows with clip
+  ```powershell
+  aksun "Tong cicing na lawang panto, pamali" | clip
+  ```
+</details>
+<details>
+  <summary>Available Options</summary>
+  
+  ```sh
+  -v, --version           print aksun version
+  -h, --help              print help to console
+  ```
+</details>
 
 TODO
 ----
@@ -39,6 +68,7 @@ TODO
 Troubleshoot
 ------------
 If you see square instead of glyps, make sure you install [noto fonts](https://www.google.com/get/noto/), or download sundanese font from [Kairaga.com](https://www.kairaga.com/font-sunda/ "download sundanese font")
+
 If you are in the terminal, make sure your terminal support rendering the fonts. I use [st](https://github.com/nugrhrizki/st "my patch of st") with [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) and that's works great (although not perfect)
 
 ---
